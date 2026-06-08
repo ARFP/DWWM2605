@@ -1,0 +1,31 @@
+VARIABLES : Prix, SommeIntroduite, Piece, StockGobelets
+//on considère qu'il y a 5 gobelet
+StockGobelets<-5
+prix<-0
+
+piece<-0
+Si StockGobelets egal 0
+ALORS
+AFFICHER "machine indiponible stock gobelet vide"
+SINON
+AFFICHER "choisir votre boisson"
+lIRE "Choix boisson"
+prix<-prixaffiché
+SommeIntroduite<-0
+FAIRE 
+insérerpiece()
+SommeIntroduite<-SommeIntroduite+piece
+TANT QUE( SommeIntroduite< prixaffiché)
+SI SommeIntroduite>prixaffiché
+ALORS
+retourmonnaie( SommeIntroduite- prixaffiché)  
+FIN SI
+DistribuerGobelet()
+AFFICHER " stock gobelet maj"
+StockGobelets<- StockGobelets-1;
+Verser_Boisson()
+AFFICHER "operation terminé merci de votre visite"
+FIN SI
+
+
+
