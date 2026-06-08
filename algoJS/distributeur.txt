@@ -1,0 +1,31 @@
+VARIABLES : Prix, SommeIntroduite, Piece, StockGobelets
+
+// Imaginons qu'il reste 5 gobelets dans la machine
+StockGobelets <- 5 
+Prix <- 1.50
+SommeIntroduite <- 0
+
+SI StockGobelets == 0 ALORS
+    AFFICHER "Plus de gobelets disponibles. Hors service."
+SINON
+    // Le client peut commander
+    AFFICHER "Veuillez choisir votre boisson"
+    
+    TANT QUE SommeIntroduite < Prix FAIRE
+        AFFICHER "Veuillez insérer de la monnaie"
+        RECEVOIR Piece
+        SommeIntroduite <- SommeIntroduite + Piece
+    FIN TANT QUE
+
+    SI SommeIntroduite > Prix ALORS
+        Rendre_Monnaie(SommeIntroduite - Prix)
+    FIN SI
+
+    Distribuer_Gobelet()
+    Verser_Boisson()
+    
+    // On retire un gobelet du stock
+    StockGobelets <- StockGobelets - 1 
+    
+    AFFICHER "Merci, bonne dégustation !"
+FIN SI

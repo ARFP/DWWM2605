@@ -1,7 +1,7 @@
 ## INSTALLER VSCODE AVEC LE LIEN SUIVANT
 [Installer VSCode sans mode admin](https://code.visualstudio.com/docs/setup/windows)
 
-#### AJOUTER LES EXTENSION SUIVANTE :
+#### AJOUTER LES EXTENSIONS SUIVANTES :
 * Live Server
 * PHP Debug
 * PHP Intelephense
@@ -12,3 +12,4 @@
 * PHP Server
 * French langage Pack for VSCode ( optionnel) 
 * Container Tools
+* *liste non limitative...*
