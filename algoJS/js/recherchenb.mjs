@@ -37,7 +37,7 @@ async function main() {
   }
   if (trouve == true) {
     console.log(
-      "le nombre est présent à la position n°" + (position) + " dans le tableau",
+      "le nombre est présent à la position n°" + (position) + " dans le tableau trié croissant "+ tabnb,
     );
   } else {
     console.log("404 Not found nombre saisi absent du tableau!");
