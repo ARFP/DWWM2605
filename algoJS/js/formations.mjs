@@ -1,10 +1,11 @@
 import { createInterface } from "readline/promises";
 import { stdin as input, stdout as output } from "process";
+import strict from "assert/strict";
 async function main() {
 
     const sc = new createInterface({ input, output });
 
-    var nosformations= {};
+    let nosformations= {  };
 
     nosformations['ABC_I']=24;
       nosformations['ADRN']=8;
@@ -16,19 +17,31 @@ async function main() {
             nosformations['DWWM']=21;
              nosformations['CDA']=23;
               nosformations['ISI']=4;
+
+    let montabformations = Object.entries( nosformations);
+
+     console.log(afficherChaine(nosformations));
+
+   // console.table(nosformations);
+    
+    montabformations.sort((a,b)=>a[1]-b[1]);
+
+    let objetformations= Object.fromEntries(montabformations);
               
-              
-    nosformations.sort(  );
-    console.log(nosformations);
-    console.table(nosformations);
-    console.log(afficherchaine(nosformations));
+    //console.table(objetformations);
+
+    console.log(afficherChaine(objetformations));
+    
+    // console.log(nosformations);
+    // console.table(nosformations);
+   
 
     sc.close();
 }
 /**
  * 
  */
-function afficherchaine(objet) {
+function afficherChaine(objet) {
 
       let tabaffichage="[";
     for (const key in objet) {
