@@ -6,6 +6,7 @@ async function main() {
   var phrase = "";
   var essai = 0;
   do {
+
     if (essai > 0) {
       console.log("N'oubliez pas le point !!");
     }
