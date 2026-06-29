@@ -1,6 +1,6 @@
 import { createInterface } from "readline/promises";
 import { stdin as input, stdout as output } from "process";
-import strict from "assert/strict";
+
 async function main() {
 
     const sc = new createInterface({ input, output });
