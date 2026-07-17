@@ -8,6 +8,15 @@
 
 **Référent administratif :** Franck C
 
+## Liens utiles
+
+- [Le site du CRM](https://crm68.fr)
+- [Kit pédagogique (exercices d'entrainement)](https://arfp.github.io)
+- [Charte graphique TP/Projets](https://arfp.github.io/charte-graphique)
+- [Github](https://github.com)
+- [Gitlab](https://gitlab.com)
+- [Docker Hub](https://hub.docker.com)
+
 ## INSTALLATION DE VSCODE
 [Installer VSCode sans mode admin](https://code.visualstudio.com/docs/setup/windows)
 
