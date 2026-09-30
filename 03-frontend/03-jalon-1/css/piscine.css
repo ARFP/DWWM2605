@@ -1,0 +1,73 @@
+:root {
+    --clr-primary: #000000;
+    --clr-secondary: #ffffff;
+    --clr-info: #0c4e94;
+    --clr-danger: #d31f26;
+    --radius: 8px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../img/wood.jpg');
+    background-size: cover;
+    color: var(--clr-primary);
+}
+
+main {
+    width: 920px;
+    margin: 10px auto;
+    max-width: 100%;
+    background-color: var(--clr-secondary);
+    border-radius: var(--radius);
+    text-align: center;
+    padding: 30px;
+}
+
+.rules {
+    border: 8px solid var(--clr-info);
+    border-radius: var(--radius);
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.rules h1 {
+    background-color: var(--clr-info);
+    color: var(--clr-secondary);
+    border-radius: var(--radius);
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.rules img {
+    height: 100px; 
+}
+
+.rules ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;;
+}
+
+.rules li {
+    margin: 30px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.rules .danger {
+    color: var(--clr-danger);
+    text-decoration: underline;
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.rules .big {
+    font-size: 38px;
+    font-weight: 700;
+}

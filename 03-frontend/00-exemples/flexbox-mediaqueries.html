@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .card {
+            background: #eee;
+            padding: 1rem;
+            border-radius: 8px;
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            .card {
+                width: calc(45% - 0.75rem);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .card {
+                width: calc(20% - 0.75rem);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <article class="card">Carte 1</article>
+        <article class="card">Carte 2</article>
+        <article class="card">Carte 3</article>
+        <article class="card">Carte 3</article>
+        <article class="card">Carte 3</article>
+    </div>
+</body>
+</html>
