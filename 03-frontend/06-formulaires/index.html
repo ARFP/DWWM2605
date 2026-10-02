@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Chargement du CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Chargement du Javascript -->
+
+</head>
+<body>
+    <header>
+        <h1>Créer un nouveau compte client</h1>
+        <h2>Maintenant !</h2>
+    </header>
+    <main>
+        <p>Inscrivez vous et bénéficiez d'avantages exclusifs !</p>
+
+        <form method="get" action="./index.html">
+            <legend>Etat civil</legend>
+            <fieldset>           
+                <label for="firstname">Prénom</label> 
+                <input type="text" id="firstname" name="prenom" value="" placeholder="Prénom" tabindex="1">
+                <br>
+                <label for="name">Nom</label> 
+                <input type="text" id="name" name="nom" value="" placeholder="Prénom" tabindex="2">
+            </fieldset>
+
+            <br><br>
+
+            <label for="comment">Un commentaire ?</label>
+            <textarea id="comment" name="comment"></textarea>
+            
+            <br><br>
+
+            <label for="selection">Choisissez le service</label>
+            <select id="selection" name="selection">
+                <option value="1">Déménagement</option>
+                <option value="2">RH</option>
+                <option value="3">Direction</option>
+            </select>
+
+            <br><br>
+
+            <datalist></datalist>
+
+            <br><br>
+            
+            <label for="ok">Accepter les conditions ?</label> 
+            <input type="checkbox" id="ok" name="ok" value="1">
+
+            <button type="button">Valider</button>
+        </form>
+    </main>
+</body>
+</html>

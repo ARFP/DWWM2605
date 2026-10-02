@@ -1,0 +1,97 @@
+ 
+ /* Importer une police depuis une plateforme distante */
+ @import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+WAL+Guides&display=swap'); 
+
+ /* Importer une police et la nommer */
+@font-face {
+    font-family: 'OpenDys'; /* Nom de la police */
+    src: url('../fonts/OpenDyslexic-Bold.otf'); /* Chemin ou url vers la police */
+}
+
+:root {
+    --body-bg: #F5F5F5;
+    --body-cl: #111111;
+    --surface-bg: #FFFFFF;
+    --crm-primary: #1b296a;
+    --crm-secondary: #ed6840;
+    --crm-error: #d32f2f;
+    --crm-warning: #e67e22;
+    --crm-info: #0288d1;
+    --crm-success: #2e7d32;
+}
+
+body {
+    font-family: "Playwrite BE WAL Guides", cursive;
+    color: blue;
+}
+
+h1 {
+    font-family: "OpenDys", "Comic Sans MS", sans-serif;
+}
+
+h2 {
+    font-family: "Comic Sans MS";
+}
+
+form * {
+    font-family: "OpenDys";
+    color: green;
+}
+
+label {
+    display: inline-block;
+
+    width: 300px;
+}
+
+input {
+
+    width: 200px;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+}
+
+fieldset {
+    border: 1px solid purple;
+}
+
+
+
+.body-bg {
+    background-color: var(--body-bg);
+}
+
+.body-cl {
+    background-color: var(--body-cl);
+}
+
+.surface-bg {
+    background-color: var(--surface-bg);
+}
+
+.crm-primary {
+    background-color: #1b296a;
+}
+
+.crm-secondary {
+    background-color: #ed6840;
+}
+
+.crm-error {
+    background-color: #d32f2f;
+}
+
+.crm-warning {
+    background-color: #e67e22;
+}
+
+.crm-info {
+    background-color: #0288d1;
+}
+
+.crm-success {
+    background-color: #2e7d32;
+}
